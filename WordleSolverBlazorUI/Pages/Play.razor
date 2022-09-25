@@ -1,0 +1,107 @@
+@page "/Play"
+<PageTitle>Play Wordle For Me</PageTitle>
+<div class="div-outer">
+    <div class="div-middle">
+        <div class="div-wrap">
+            <h1 style="text-align: center">Lets Play</h1>
+            @if (!string.IsNullOrEmpty(firstGuess))
+            {
+                <div class="div-button-wordle-row">
+                    <button class="@cssBtn1 button-wordle" id="1"
+                    @onclick="() => ChangeColor(1)">@Char.ToUpper(firstGuess[0])</button>
+                    <button class="@cssBtn2 button-wordle" id="2"
+                    @onclick="() => ChangeColor(2)">@Char.ToUpper(@firstGuess[1])</button>
+                    <button class=" @cssBtn3 button-wordle" id="3"
+                    @onclick="() => ChangeColor(3)">@Char.ToUpper(@firstGuess[2])</button>
+                    <button class=" @cssBtn4 button-wordle" id="4"
+                    @onclick="() => ChangeColor(4)">@Char.ToUpper(@firstGuess[3])</button>
+                    <button class=" @cssBtn5 button-wordle" id="5"
+                    @onclick="() => ChangeColor(5)">@Char.ToUpper(@firstGuess[4])</button>
+                    <br />
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(secondGuess))
+            {
+                <div class="div-button-wordle-row">
+                    <button class="btn @cssBtn6 button-wordle" id="6"
+                    @onclick="() => ChangeColor(6)">@Char.ToUpper(secondGuess[0])</button>
+                    <button class="btn @cssBtn7 button-wordle" id="7"
+                    @onclick="() => ChangeColor(7)">@Char.ToUpper(secondGuess[1])</button>
+                    <button class="btn @cssBtn8 button-wordle" id="8"
+                    @onclick="() => ChangeColor(8)">@Char.ToUpper(secondGuess[2])</button>
+                    <button class="btn @cssBtn9 button-wordle" id="9"
+                    @onclick="() => ChangeColor(9)">@Char.ToUpper(secondGuess[3])</button>
+                    <button class="btn @cssBtn10 button-wordle" id="10"
+                    @onclick="() => ChangeColor(10)">@Char.ToUpper(secondGuess[4])</button>
+                    <br />
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(thirdGuess))
+            {
+                <div class="div-button-wordle-row">
+                    <button class="btn @cssBtn11 button-wordle" id="11"
+                    @onclick="() => ChangeColor(11)">@Char.ToUpper(thirdGuess[0])</button>
+                    <button class="btn @cssBtn12 button-wordle" id="12"
+                    @onclick="() => ChangeColor(12)">@Char.ToUpper(thirdGuess[1])</button>
+                    <button class="btn @cssBtn13 button-wordle" id="13"
+                    @onclick="() => ChangeColor(13)">@Char.ToUpper(thirdGuess[2])</button>
+                    <button class="btn @cssBtn14 button-wordle" id="14"
+                    @onclick="() => ChangeColor(14)">@Char.ToUpper(thirdGuess[3])</button>
+                    <button class="btn @cssBtn15 button-wordle" id="15"
+                    @onclick="() => ChangeColor(15)">@Char.ToUpper(thirdGuess[4])</button>
+                    <br />
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(fourthGuess))
+            {
+                <div class="div-button-wordle-row">
+                    <button class="btn @cssBtn16 button-wordle" id="16"
+                    @onclick="() => ChangeColor(16)">@Char.ToUpper(fourthGuess[0])</button>
+                    <button class="btn @cssBtn17 button-wordle" id="17"
+                    @onclick="() => ChangeColor(17)">@Char.ToUpper(fourthGuess[1])</button>
+                    <button class="btn @cssBtn18 button-wordle" id="18"
+                    @onclick="() => ChangeColor(18)">@Char.ToUpper(fourthGuess[2])</button>
+                    <button class="btn @cssBtn19 button-wordle" id="19"
+                    @onclick="() => ChangeColor(19)">@Char.ToUpper(fourthGuess[3])</button>
+                    <button class="btn @cssBtn20 button-wordle" id="20"
+                    @onclick="() => ChangeColor(20)">@Char.ToUpper(fourthGuess[4])</button>
+                    <br />
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(fifthGuess))
+            {
+                <div class="div-button-wordle-row">
+                    <button class="btn @cssBtn21 button-wordle" id="21"
+                    @onclick="() => ChangeColor(21)">@Char.ToUpper(fifthGuess[0])</button>
+                    <button class="btn @cssBtn22 button-wordle" id="22"
+                    @onclick="() => ChangeColor(22)">@Char.ToUpper(fifthGuess[1])</button>
+                    <button class="btn @cssBtn23 button-wordle" id="23"
+                    @onclick="() => ChangeColor(23)">@Char.ToUpper(fifthGuess[2])</button>
+                    <button class="btn @cssBtn24 button-wordle" id="24"
+                    @onclick="() => ChangeColor(24)">@Char.ToUpper(fifthGuess[3])</button>
+                    <button class="btn @cssBtn25 button-wordle" id="25"
+                    @onclick="() => ChangeColor(25)">@Char.ToUpper(fifthGuess[4])</button>
+                    <br />
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(sixthGuess))
+            {
+                <div class="div-button-wordle-row">
+                    <button class="btn @cssBtn26 button-wordle" id="26"
+                    @onclick="() => ChangeColor(26)">@Char.ToUpper(sixthGuess[0])</button>
+                    <button class="btn @cssBtn27 button-wordle" id="27"
+                    @onclick="() => ChangeColor(27)">@Char.ToUpper(sixthGuess[1])</button>
+                    <button class="btn @cssBtn28 button-wordle" id="28"
+                    @onclick="() => ChangeColor(28)">@Char.ToUpper(sixthGuess[2])</button>
+                    <button class="btn @cssBtn29 button-wordle" id="29"
+                    @onclick="() => ChangeColor(29)">@Char.ToUpper(sixthGuess[3])</button>
+                    <button class="btn @cssBtn30 button-wordle" id="30"
+                    @onclick="() => ChangeColor(30)">@Char.ToUpper(sixthGuess[4])</button>
+                    <br />
+                </div>
+            }
+
+            <button @onclick="() => GetGuess()" class="btn btn-primary btn-guess">Guess</button>
+        </div>
+    </div>
+</div>
