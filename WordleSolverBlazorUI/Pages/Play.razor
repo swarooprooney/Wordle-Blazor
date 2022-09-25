@@ -1,3 +1,4 @@
+@page "/"
 @page "/Play"
 <PageTitle>Play Wordle For Me</PageTitle>
 <div class="div-outer">
@@ -102,6 +103,26 @@
             }
 
             <button @onclick="() => GetGuess()" class="btn btn-primary btn-guess">Guess</button>
+        </div>
+        <div
+            style="text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">
+            <b>How do I play?</b>
+            <ol>
+                <li> Open the <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank"> official worlde
+                        site </a> in
+                    another window.</li>
+                <li> Enter the first guess that is shown, which is usually <b>"Alert"</b> in the main site and hit
+                    enter.</li>
+                <li> In the main site depending on today's answer the colours of the characters will change.</li>
+                <li> Now make sure you match the colour of the character in this website to that of main website. Thered
+                    colour here corresponds to gray in the main website, yellow
+                    corresponds to yellow and green to
+                    green.
+                </li>
+                <li> Once you have matched the colour click on Guess to get the next guess.</li>
+                <li> Enter the next guess in the main website and hit enter.</li>
+                <li> Repeat step 3-6 till all characters turn green in the main website.</li>
+            </ol>
         </div>
     </div>
 </div>
